@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script>
+function validateForm()
+{
+var fullname=document.myForm.fullname.value;
+var contact=document.myForm.contact.value;
+var email=document.myForm.email.value;
+var letters = /^[A-Za-z]+$/;
+var nums = /^[0-9]+$/;
+var mail =/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+if(fullname==null||fullname=="")
+{
+window.alert("Name field is Blank");
+return false;
+}
+
+else if(contact==null||contact=="")
+{
+window.alert("Contact field needs to be filled");
+return false;
+}
+else if(contact.length<10||contact.length>10)
+{
+window.alert("Contact should be at 10 digits long");
+return false;
+}
+else if(email==null||email=="")
+{
+window.alert("Email Field is Blanked");
+return false;
+} 
+
+if(myForm.fullname.value.match(letters))
+{
+
+}
+else
+{    window.alert("Invalid name(text only)");
+     return false;
+}
+if(myForm.contact.value.match(nums))
+{
+
+}
+else
+{    window.alert("Invalid contact (num only)");
+     return false;
+}
+if(myForm.email.value.match(mail))
+{
+    }
+else
+{    window.alert("Invalid email");
+     return false;
+}
+}
+
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #d2a679;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #d2a679;
+}
+
+.container {
+  border-radius: 5px;
+ background-image: url('wood1.jpg');
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interior Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black|Judson:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body >
+    <!--------------- Navigation Bar ------------------------->
+
+    <div class="navbar" id="navigation">
+      <h1 style="font-family: 'Playfair Display';">Olive Villa</h1>
+		
+      <a href="#contact"><strong>Contact Us</strong></a>
+ 		<a href="solutions.html"><strong>Solutions</strong></a>
+		
+      <!--<a href="" class="drop"><strong>Services</strong></a>-->
+      <div class="dropdown">
+        <button
+          class="dropbtn"
+          style="background-color: transparent !important;"
+        >
+          <a
+            href="#products"
+            style="
+              font-family: 'Chivo', sans-serif;
+              font-size: 20px;
+              color: white;
+            "
+            onMouseOver="this.style.border='0px'"
+          >
+            <strong>Services</strong>
+          </a>
+        </button>
+        <div class="dropdown-content">
+          <a href="OWNSPACE.html"><strong>Design your own space</strong></a>
+          <a href="Ourservices.html"><strong>Our designs </strong></a>
+<a href="ingenious.html"><strong>Ingenious designs </strong></a>
+         
+        </div>
+      </div>
+
+      <a href="index.html"><strong>Home</strong></a>
+    </div>
+
+  <div class="heroform">
+</br></br></br>
+</br>
+
+<center>
+
+</br></br></br>
+
+<div class="container">
+
+<p style="color:WHITE"> Our designers will get back to you with best possible portfolio options with a combination of your own selected products !</p>
+  <form name="myForm" action="ownspaceinsert.php" onSubmit="return validateForm()" method="post">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname" style="color:WHITE">Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="fullname" placeholder="" >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname" style="color:WHITE">Email</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="email" placeholder="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname" style="color:WHITE">Contact</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="contact" placeholder="">
+    </div>
+  </div>
+ 
+  <div class="row">
+    <div class="col-25">
+      <label for="subject" style="color:WHITE">Special requirements</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="req" placeholder="Special requirements if any ...." style="height:200px"></textarea>
+    </div>
+  </div></br></br>
+  <div class="row">
+    <input type="submit" value="PROCEED">
+  </div>
+  </form>
+</div></center>
+</div>
+<div class="footer">
+      <div class="flex_container_footer">
+        <div style="widows: 10%;">
+          <h1 style="font-family: 'Playfair Display';">Olive Villa</h1>
+        </div>
+        <div style="padding: 0% 0% 0% 10%; text-align: justify; width: 50%;" id="footer_nav">
+			<a href="index.html" style="float: right;">CONTACT&nbsp;US</a>
+			<!-- <a href="map.html" style="float: right;">LOCATION</a> -->
+			<a href="index.html" style="float: right;">PORTFOLIO</a>
+			<a href="index.html" style="float: right;">ABOUT</a>
+			<a href="index.html" style="float: right;">HOME</a>
+        </div>
+        <div style="padding: 0% 0%; position: sticky; width: 30%;" id="footer_icon">
+          <a href="http://www.facebook.com" target="_blank" style="padding-top: 5px; padding-right: 5%;"><img src="Assets/facebook1.png" width="25px" height="25px" style="border-radius: 7px;"></a>
+          <a href="http://www.twitter.com" target="_blank" style="padding-top: 5px; padding-right: 5%;"><img src="Assets/twitter1.png" width="25px" height="25px"></a>
+          <a href="http://www.linkedin.com" class="fa fa-linkedin" target="_blank"></a>
+		  <a href="http://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+		  <a href="http://www.reddit.com" class="fa fa-reddit" target="_blank"></a>
+        </div>
+	  </div>
+	  <footer id="sticky-footer">
+		
+	  </footer>
+	
+    </div>

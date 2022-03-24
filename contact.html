@@ -1,0 +1,72 @@
+<html>
+
+<script>
+function validateForm()
+{
+var fullname=document.myForm.fullname.value;
+var contact=document.myForm.contact.value;
+var email=document.myForm.email.value;
+var letters = /^[A-Za-z]+$/;
+var nums = /^[0-9]+$/;
+var mail =/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+if(fullname==null||fullname=="")
+{
+window.alert("Name field is Blank");
+return false;
+}
+
+else if(contact==null||contact=="")
+{
+window.alert("Contact field needs to be filled");
+return false;
+}
+else if(contact.length<10||contact.length>10)
+{
+window.alert("Contact should be at 10 digits long");
+return false;
+}
+else if(email==null||email=="")
+{
+window.alert("Email Field is Blanked");
+return false;
+} 
+
+if(myForm.fullname.value.match(letters))
+{
+
+}
+else
+{    window.alert("Invalid name(text only)");
+     return false;
+}
+if(myForm.contact.value.match(nums))
+{
+
+}
+else
+{    window.alert("Invalid contact (num only)");
+     return false;
+}
+if(myForm.email.value.match(mail))
+{
+     window.alert("valid email");
+     window.alert("welcome");
+}
+else
+{    window.alert("Invalid email");
+     return false;
+}
+}
+</script>
+
+
+
+
+
+<form name="myForm" action="contactinsert.php" onsubmit="return validateForm()" method="post" >
+  Name: <input type="text" id="fullname" name="fullname"></br>
+ Email:<input type="text" id="email" name="email"></br>
+Contact: <input type="text" id="contact" name="contact"></br>
+Inquiry: <input type="text" id="inquiry" name="inquiry"></br></br>
+  <input type="submit" value="SEND THE REQUEST">
+</form></html>

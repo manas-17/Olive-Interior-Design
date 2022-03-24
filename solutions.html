@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<style>
+.mySlides {display:none;}
+</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interior Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black|Judson:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body style="background-color:black;">
+    <!--------------- Navigation Bar ------------------------->
+
+      <div class="navbar" id="navigation">
+      <h1 style="font-family: 'Playfair Display';">Olive Villa</h1>
+		  <a href="cart.html"><strong>Cart</strong></a>
+      <a href="#contact"><strong>Contact Us</strong></a>
+ <a href="solutions.html"><strong>Solutions</strong></a>
+      <!--<a href="" class="drop"><strong>Services</strong></a>-->
+      <div class="dropdown">
+        <button
+          class="dropbtn"
+          style="background-color: transparent !important;"
+        >
+          <a
+            href="#products"
+            style="
+              font-family: 'Chivo', sans-serif;
+              font-size: 20px;
+              color: white;
+            "
+            onMouseOver="this.style.border='0px'"
+          >
+            <strong>Services</strong>
+          </a>
+        </button>
+        <div class="dropdown-content">
+          <a href="OWNSPACE.html"><strong>Design your own space</strong></a>
+          <a href="Ourservices.html"><strong>Our designs </strong></a>
+			<a href="ingenious.html"><strong>Ingenious designs </strong></a>
+         
+        </div>
+      </div>
+      
+      <a href="index.html"><strong>Home</strong></a>
+    </div>
+
+<center><img src="sol.jfif" width="1515" height="750"></center> 
+<br/><br/><br/><br/>
+      <div
+        class="centered_portfolio"
+        style="font-size: 40px; border: 5px solid white; color: white;"
+      >
+        Experience design with comfort 
+      </div>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<p style="font-size: xx-large; font-family:helvetica;"> <a href="" class="middle" style="color: white;">VR FILM EXPERIENCE</a></p>
+  <div class ="mainn">
+  <center>
+ <table style="text-align:center;align=center ">
+<tr>
+</br></br></br></br>
+<td style="color:#ffcc66 ; font-family:verdana; font-size:25px;">EMPOWERING THE VIEWER </br></br></br></br></br></br><p style="color:white ; font-family:verdana; font-size:25px;">Our VR immersive showroom delivers the 360°</br> panorama experience with added</br> interactivity.It’s a vital step in </br>building that emotional connection</br> and trust you need to sell </br>unbuilt property.</p></td>
+<td> <video width="800" height="400" controls>
+  <source src="vr.mp4" type="video/mp4">
+  <source src="vr.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video> </td>
+<td></td><td></td>
+</tr>
+</table></div>
+
+
+<br/><br/><br/><br/>
+
+
+<p style="font-size: xx-large; font-family:helvetica;"> <a href="" class="middle" style="color: white;">3D RENDERINGS</a></p>
+  <div class ="mainn">
+  <center>
+ <table style="text-align:center;align=center ">
+<tr>
+</br></br></br></br>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><img class="mySlides" src="ren3.jpg" style="width:600px;height:400px">
+<img class="mySlides" src="ren4.jpg" style="width:600px;height:400px">
+  <img class="mySlides" src="ren1.jpg" style="width:600px;height:400px">
+  <img class="mySlides" src="ren2.jpg" style="width:600px;height:400px"></td><td style="color:#ffcc66 ; font-family:verdana; font-size:25px;">THE ART IS IN THE DETAIL!</br></br></br></br></br></br><p style="color:white ; font-family:verdana; font-size:25px;">Our 3D renderings help potential  buyers make the imaginative leap  that is the key to success in off-plan sales. It’s about </br>using the best technology to build emotion and connection,transporting them to a perfect moment and place in the future.</p>
+</td>
+
+<td></td><td></td>
+</tr>
+</table></div>
+<br/><br/><br/><br/>
+
+
+<p style="font-size: xx-large; font-family:helvetica;"> <a href="" class="middle" style="color: white;">MEDIA WALL</a></p>
+  <div class ="mainn">
+<center>
+ <table style="text-align:center;align=center ">
+<tr>
+</br></br></br></br>
+<td style="color:#ffcc66 ; font-family:verdana; font-size:25px;">SELLING THE DREAM</br></br></br></br></br></br><p style="color:white ; font-family:verdana; font-size:25px;">
+Our touchscreen applications allow your audience to get hands-on and feel more connected to your development. Using class-leading technology from the latest smartphones and tablets, homebuyers can seamlessly explore every aspect of your development on striking large-scale, edge-to-edge displays.</p></td>
+<td>> <video width="800" height="400" controls>
+  <source src="mediaa.mp4" type="video/mp4">
+  <source src="mediaa.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video> </td>
+<td></td><td></td>
+</tr>
+</table></div>
+</center>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div class="footer">
+      <div class="flex_container_footer">
+        <div style="widows: 10%;">
+          <h1 style="font-family: 'Playfair Display';">Olive Villa</h1>
+        </div>
+        <div style="padding: 0% 0% 0% 10%; text-align: justify; width: 50%;" id="footer_nav">
+			<a href="index.html" style="float: right;">CONTACT&nbsp;US</a>
+			<!-- <a href="map.html" style="float: right;">LOCATION</a> -->
+			<a href="index.html" style="float: right;">PORTFOLIO</a>
+			<a href="index.html" style="float: right;">ABOUT</a>
+			<a href="index.html" style="float: right;">HOME</a>
+        </div>
+        <div style="padding: 0% 0%; position: sticky; width: 30%;" id="footer_icon">
+          <a href="http://www.facebook.com" target="_blank" style="padding-top: 5px; padding-right: 5%;"><img src="Assets/facebook1.png" width="25px" height="25px" style="border-radius: 7px;"></a>
+          <a href="http://www.twitter.com" target="_blank" style="padding-top: 5px; padding-right: 5%;"><img src="Assets/twitter1.png" width="25px" height="25px"></a>
+          <a href="http://www.linkedin.com" class="fa fa-linkedin" target="_blank"></a>
+		  <a href="http://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+		  <a href="http://www.reddit.com" class="fa fa-reddit" target="_blank"></a>
+        </div>
+	  </div>
+	  <footer id="sticky-footer">
+		<div class="container text-center" style="text-align: center;" id="footer_copyright">
+		  <!-- <b>Copyright &copy; Olive Villa Interiors </b> -->
+		</div>
+	  </footer>
+	
+    </div>
+</body>
+</html>

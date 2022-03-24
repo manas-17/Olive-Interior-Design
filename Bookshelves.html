@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+a:link {
+  color: FFFFCC;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: FFFFCC;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.button {
+  border:none;
+  color: white;
+  padding: 10px 22px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+font-colour:"black";
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: white;}
+</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interior Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black|Judson:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  	<body>
+		<!--------------- Navigation Bar ------------------------->
+		    <div class="navbar" id="navigation">
+      <h1 style="font-family: 'Playfair Display';">Olive Villa</h1>
+				<a href="cart.html"><strong>Cart</strong></a>
+      <a href="#contact"><strong>Contact Us</strong></a>
+ <a href="solutions.html"><strong>Solutions</strong></a>
+      <!--<a href="" class="drop"><strong>Services</strong></a>-->
+      <div class="dropdown">
+        <button
+          class="dropbtn"
+          style="background-color: transparent !important;"
+        >
+          <a
+            href="#products"
+            style="
+              font-family: 'Chivo', sans-serif;
+              font-size: 20px;
+              color: white;
+            "
+            onMouseOver="this.style.border='0px'"
+          >
+            <strong>Services</strong>
+          </a>
+        </button>
+        <div class="dropdown-content">
+          <a href="OWNSPACE.html"><strong>Design your own space</strong></a>
+          <a href="Ourservices.html"><strong>Our designs </strong></a>
+         
+        </div>
+      </div>
+
+      <a href="index.html"><strong>Home</strong></a>
+    </div>
+		<!--------------- Main Body ------------------------->
+
+		<!--------------- Chair Page (Hero Image) ------------------------->
+
+		<div class="hero_bookshelf" id="home">
+		  <div
+			class="centered_bookshelf"
+			style="
+			  font-size: 100px;
+			  border: 10px solid white;
+			  color: white;
+			  font-family: 'Playfair Display', serif !important;
+			"
+		  >
+			Bookshelves
+		  </div>
+		  <!--<div class="scroll_down"><a href="#about" style="font-family: 'Chivo', sans-serif; color: white; font-size: 20px; text-decoration: none;"><strong>SCROLL DOWN</strong></a></div>-->
+		  <div class="scroll_down">
+			<a
+			  href="#bookshelf"
+			  style="
+				font-family: 'Chivo', sans-serif;
+				color: white;
+				font-size: 20px;
+				text-decoration: none;
+			  "
+			>
+			  <img src="Assets/scroll_down.png" alt="SCROLL DOWN" />
+			</a>
+		  </div>
+		</div>
+		
+		<!--------------- Images ----------------------------------->
+		
+		<div class="main" style=" font-family: 'Chivo', sans-serif;" id="bookshelf">
+			<div class="flex_container">
+				<div>
+				  <img id="myImg" class="myImg" src="Assets/Bookshelves/bistrot_s.jpg" alt="Bistrot S" width="500px">
+
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					</div>
+				</div>
+				<div style="padding-left: 5%">
+				  <h1>Bistrot&nbsp;S</br></br><a href=""><img src="cart.png" alt="Avatar" class="cartbutton" style="width:60px;height:60px;" ></a></h1>
+				</div>
+			</div>	
+			
+			<div class="flex_container">
+				<div>
+				  <img id="myImg" class="myImg" src="Assets/Bookshelves/cage_b.jpg" alt="Cage B" width="500px">
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					</div>
+				</div>
+				<div style="padding-left: 5%">
+				  <h1>Cage&nbsp;B</br></br><a href=""><img src="cart.png" alt="Avatar" class="cartbutton" style="width:60px;height:60px;" ></a>
+ </h1>
+				</div>
+			</div>	
+			
+			<div class="flex_container">
+				<div>
+				  <img id="myImg" class="myImg" src="Assets/Bookshelves/cage_c.jpg" alt="Cage C" width="500px">
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					</div>
+				</div>
+				<div style="padding-left: 5%">
+				  <h1>Cage&nbsp;C</br></br><a href=""><img src="cart.png" alt="Avatar" class="cartbutton" style="width:60px;height:60px;" ></a></h1>
+				</div>
+			</div>	
+			
+			<div class="flex_container">
+				<div>
+				  <img id="myImg" class="myImg" src="Assets/Bookshelves/style_set.jpg" alt="Style Set" width="500px">
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					</div>
+				</div>
+				<div  style="padding-left: 5%">
+				  <h1>Style&nbsp;Set</br></br><a href=""><img src="cart.png" alt="Avatar" class="cartbutton" style="width:60px;height:60px;" ></a></h1>
+				</div>
+			</div>	
+			
+			<div class="flex_container">
+				<div>
+				  <img id="myImg" class="myImg" src="Assets/Bookshelves/tangram.jpg" alt="Tangram" width="500px">
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					</div>
+				</div>
+				<div style="padding-left: 5%">
+				  <h1>Tangram</br></br><a href=""><img src="cart.png" alt="Avatar" class="cartbutton" style="width:60px;height:60px;" ></a></h1>
+				</div>
+			</div>	
+	</br>	</br></br></br></br>	
+<center>		
+<button class="button button1" type="button" onclick="sofas.html" style="color:black"><a href="sofas.html">SOFAS</a></button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<button class="button button1" type="button" onclick="Coffee%20Tables.html" style="color:black"><a href="Coffee%20Tables.html">COFFEE TABLES</a></button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<button class="button button1" type="button" onclick="chairs.html" style="color:black"><a href="chairs.html">CHAIRS</a></button></center>
+	</div>
+		<!--------------- Footer ------------------------->
+
+  <div class="footer">
+      <div class="flex_container_footer">
+        <div style="widows: 10%;">
+          <h1 style="font-family: 'Playfair Display';">Olive Villa</h1>
+        </div>
+        <div style="padding: 0% 0% 0% 10%; text-align: justify; width: 50%;" id="footer_nav">
+			<a href="index.html" style="float: right;">CONTACT&nbsp;US</a>
+			<!-- <a href="map.html" style="float: right;">LOCATION</a> -->
+			<a href="index.html" style="float: right;">PORTFOLIO</a>
+			<a href="index.html" style="float: right;">ABOUT</a>
+			<a href="index.html" style="float: right;">HOME</a>
+        </div>
+        <div style="padding: 0% 0%; position: sticky; width: 30%;" id="footer_icon">
+          <a href="http://www.facebook.com" target="_blank" style="padding-top: 5px; padding-right: 5%;"><img src="Assets/facebook1.png" width="25px" height="25px" style="border-radius: 7px;"></a>
+          <a href="http://www.twitter.com" target="_blank" style="padding-top: 5px; padding-right: 5%;"><img src="Assets/twitter1.png" width="25px" height="25px"></a>
+          <a href="http://www.linkedin.com" class="fa fa-linkedin" target="_blank"></a>
+		  <a href="http://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+		  <a href="http://www.reddit.com" class="fa fa-reddit" target="_blank"></a>
+        </div>
+	  </div>
+	  <footer id="sticky-footer">
+		<div class="container text-center" style="text-align: center;" id="footer_copyright">
+		  <!-- <b>Copyright &copy; Olive Villa Interiors </b> -->
+		</div>
+	  </footer>
+	
+    </div>
+		
+		<!------------------- Javascript for Modal Image -------------------->
+		
+		<script>
+			var modal = document.getElementById("myModal");
+			var i;
+
+			var img = document.getElementsByClassName("myImg");
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			 for(i=0;i< img.length;i++)
+			   {    
+				img[i].onclick = function(){
+
+				modal.style.display = "block";
+				   modalImg.src = this.src;
+			captionText.innerHTML = this.alt;
+			 }
+			}
+
+			var span = document.getElementsByClassName("close")[0];
+
+
+			span.onclick = function() { 
+			   modal.style.display = "none";
+			}
+		</script>
+
+	
+		<script src="bookshelves.js"></script>
+		
+	</body>
+</html>
